@@ -75,7 +75,7 @@ Az egyes oszlopok jelentése a következő:
 
 
 from ast import Or
-
+from MATE import _1_elert_helyezes
 
 class Orszag:
     lista = []
@@ -92,4 +92,8 @@ with open("K.txt", "r", encoding="utf8") as f:
         s = sor.strip().split("\t")
         t = Orszag(int(s[0]),s[1],int(s[2]),int(s[3]),s[4])
 
-print(len(Orszag.lista))
+
+#1)	Írja ki Magyarország által elért helyezéseket. A kiírásban jelenjen meg a vb éve és helyszíne is.
+print("1)	Írja ki Magyarország által elért helyezéseket. A kiírásban jelenjen meg a vb éve és helyszíne is.")
+_1_elert_helyezes(Orszag.lista,"Magyarország")
+
